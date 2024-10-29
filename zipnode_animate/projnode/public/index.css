@@ -12,9 +12,16 @@ body {
 }
 
 .navbar {
+    display: flex;
+    justify-content: center;
     background-color: transparent; /* Make the navbar transparent */
     border-bottom: none; /* Remove any border if present */
     transition: background-color 0.3s ease;
+}
+
+.navbar .navbar-nav {
+    display: flex; /* Ensure the navbar items are in a row */
+    align-items: center; /* Align items vertically centered */
 }
 
 .navbar .navbar-nav .nav-link {
@@ -228,7 +235,8 @@ body {
 }
 
 .navbar .navbar-nav .nav-link {
-    margin-right: 200px;
+    margin-right: 30px;
+    margin-left: 50px;
     padding: 25px 0;
     color: var(--dark);
     font-weight: 500;
