@@ -228,7 +228,7 @@ body {
 }
 
 .navbar .navbar-nav .nav-link {
-    margin-right: 30px;
+    margin-right: 200px;
     padding: 25px 0;
     color: var(--dark);
     font-weight: 500;
@@ -249,6 +249,41 @@ body {
     vertical-align: middle;
     margin-left: 8px;
 }
+.neon-button {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 5px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-top: -5;
+    margin-right: 100px ;
+}
+
+.neon-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #43168a;
+    filter: blur(10px);
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.neon-button:hover {
+    color: rgb(255, 255, 255);
+}
+
+.neon-button:hover::before {
+    background: rgba(106, 0, 255, 0.4);
+}
+
+
 
 @media (max-width: 991.98px) {
     .navbar .navbar-nav .nav-link  {
@@ -465,4 +500,3 @@ body {
 .copyright a:hover {
     color: var(--light);
 }
-
